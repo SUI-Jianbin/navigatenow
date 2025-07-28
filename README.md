@@ -88,7 +88,7 @@ Now you have successfully set up the Navigate Now Website on your local machine.
 
 ## Contact
 
-For questions or assistance, contact the NavigateNow Team: navigate.now0@gmail.com
+For questions or assistance, contact the NavigateNow Team: navigatenow@gmail.com
 
 
 

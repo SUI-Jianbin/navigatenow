@@ -16,7 +16,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 				termsOfService = "run code now",
 				contact = @Contact(
 						name = "Mr Navigate Now System",
-						email = "azal9758@uni.Sydney.edu.au"
+						email = "navigatenow@gmail.com"
 				),
 				license =  @License(
 						name= "licence",
