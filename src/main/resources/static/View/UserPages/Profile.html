@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Profile - NavigateNow</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../../assets/img/navigatenow_logo.png" rel="icon">
+  <link href="../../assets/img/navigatenow_logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/UserPages/user_register.css" rel="stylesheet">
+  <link href="../../assets/css/UserPages/profile.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="../MainPages/Index.html" class="logo d-flex align-items-center">
+        <img src="../../assets/img/navigatenow_logo.png" alt="">
+        <span class="d-none d-lg-block">NavigateNow</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <span id="topbar_username" class="d-none d-md-block dropdown-toggle ps-2">Team 18</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6 id="bar_firstname">Team 18</h6>
+              <span id="bar_lastname">Tourists</span>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="LogoutSuccessfully.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#plan-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Plan</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="plan-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../MyPlans/MyPlans.html">
+              <i class="bi bi-circle"></i><span>My Plans</span>
+            </a>
+          </li>
+          <li>
+            <a href="../NewPlans/NewPlans.html">
+              <i class="bi bi-circle"></i><span>New Plans</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Plan Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#group-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Group</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="group-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="../MyGroups/MyGroups.html">
+              <i class="bi bi-circle"></i><span>My Groups</span>
+            </a>
+          </li>
+          <li>
+            <a href="../NewGroups/NewGroups.html">
+              <i class="bi bi-circle"></i><span>New Groups</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Group Nav -->
+
+      <li class="nav-heading">Pages</li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="ContactUs.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="Feedback.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Feedback</span>
+        </a>
+      </li><!-- End Feedback Page Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <div class="pagetitle">
+      <h1>Profile</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../MainPages/Index.html">Home</a></li>
+          <li class="breadcrumb-item">Users</li>
+          <li class="breadcrumb-item active">Profile</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section profile">
+      <div class="row">
+
+        <div class="col-xl-8">
+          <div class="card">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#edit-interest">Edit Interest</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Change Password</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">Profile Details</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">First Name</div>
+                    <div class="col-lg-9 col-md-8" id="fName"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Last Name</div>
+                    <div class="col-lg-9 col-md-8" id="lName"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Age</div>
+                    <div class="col-lg-9 col-md-8" id="ag"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Gender</div>
+                    <div class="col-lg-9 col-md-8" id="gend"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8" id="ema"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Contact Number</div>
+                    <div class="col-lg-9 col-md-8" id="contactNum"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Date of Birth</div>
+                    <div class="col-lg-9 col-md-8" id="dateofBirth"></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Nationality</div>
+                    <div class="col-lg-9 col-md-8" id="Nation"></div>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                  <!-- Profile Edit Form -->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="firstName" class="col-md-4 col-lg-3 col-form-label">First Name</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="firstName" type="text" class="form-control" id="firstName" value="Team 18">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="lastName" class="col-md-4 col-lg-3 col-form-label">Last Name</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="lastName" type="text" class="form-control" id="lastName" value="Team 18">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="age" class="col-md-4 col-lg-3 col-form-label">Age</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="age" type="text" class="form-control" id="age" value="18">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="gender" class="col-md-4 col-lg-3 col-form-label">Gender</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select class="form-select" aria-label="Default select example" id="gender">
+                          <option selected> </option>
+                          <option value="0">Female</option>
+                          <option value="1">Male</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="text" class="form-control" id="email" value="team18@gmail.com">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="phone" class="col-md-4 col-lg-3 col-form-label">Contact Number</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="phone" value="04123456">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="dob" class="col-md-4 col-lg-3 col-form-label">Date of Birth</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input type="date" class="form-control" id="dob">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="nationality" class="col-md-4 col-lg-3 col-form-label">Nationality</label>
+                      <div class="col-md-8 col-lg-9">
+                        <select class="form-select" aria-label="Default select example" id="nationality">
+                          <option value="">-- select one --</option>
+                          <option value="afghan">Afghan</option>
+                          <option value="albanian">Albanian</option>
+                          <option value="algerian">Algerian</option>
+                          <option value="american">American</option>
+                          <option value="andorran">Andorran</option>
+                          <option value="angolan">Angolan</option>
+                          <option value="antiguans">Antiguans</option>
+                          <option value="argentinean">Argentinean</option>
+                          <option value="armenian">Armenian</option>
+                          <option value="australian">Australian</option>
+                          <option value="austrian">Austrian</option>
+                          <option value="azerbaijani">Azerbaijani</option>
+                          <option value="bahamian">Bahamian</option>
+                          <option value="bahraini">Bahraini</option>
+                          <option value="bangladeshi">Bangladeshi</option>
+                          <option value="barbadian">Barbadian</option>
+                          <option value="barbudans">Barbudans</option>
+                          <option value="batswana">Batswana</option>
+                          <option value="belarusian">Belarusian</option>
+                          <option value="belgian">Belgian</option>
+                          <option value="belizean">Belizean</option>
+                          <option value="beninese">Beninese</option>
+                          <option value="bhutanese">Bhutanese</option>
+                          <option value="bolivian">Bolivian</option>
+                          <option value="bosnian">Bosnian</option>
+                          <option value="brazilian">Brazilian</option>
+                          <option value="british">British</option>
+                          <option value="bruneian">Bruneian</option>
+                          <option value="bulgarian">Bulgarian</option>
+                          <option value="burkinabe">Burkinabe</option>
+                          <option value="burmese">Burmese</option>
+                          <option value="burundian">Burundian</option>
+                          <option value="cambodian">Cambodian</option>
+                          <option value="cameroonian">Cameroonian</option>
+                          <option value="canadian">Canadian</option>
+                          <option value="cape verdean">Cape Verdean</option>
+                          <option value="central african">Central African</option>
+                          <option value="chadian">Chadian</option>
+                          <option value="chilean">Chilean</option>
+                          <option value="chinese">Chinese</option>
+                          <option value="colombian">Colombian</option>
+                          <option value="comoran">Comoran</option>
+                          <option value="congolese">Congolese</option>
+                          <option value="costa rican">Costa Rican</option>
+                          <option value="croatian">Croatian</option>
+                          <option value="cuban">Cuban</option>
+                          <option value="cypriot">Cypriot</option>
+                          <option value="czech">Czech</option>
+                          <option value="danish">Danish</option>
+                          <option value="djibouti">Djibouti</option>
+                          <option value="dominican">Dominican</option>
+                          <option value="dutch">Dutch</option>
+                          <option value="east timorese">East Timorese</option>
+                          <option value="ecuadorean">Ecuadorean</option>
+                          <option value="egyptian">Egyptian</option>
+                          <option value="emirian">Emirian</option>
+                          <option value="equatorial guinean">Equatorial Guinean</option>
+                          <option value="eritrean">Eritrean</option>
+                          <option value="estonian">Estonian</option>
+                          <option value="ethiopian">Ethiopian</option>
+                          <option value="fijian">Fijian</option>
+                          <option value="filipino">Filipino</option>
+                          <option value="finnish">Finnish</option>
+                          <option value="french">French</option>
+                          <option value="gabonese">Gabonese</option>
+                          <option value="gambian">Gambian</option>
+                          <option value="georgian">Georgian</option>
+                          <option value="german">German</option>
+                          <option value="ghanaian">Ghanaian</option>
+                          <option value="greek">Greek</option>
+                          <option value="grenadian">Grenadian</option>
+                          <option value="guatemalan">Guatemalan</option>
+                          <option value="guinea-bissauan">Guinea-Bissauan</option>
+                          <option value="guinean">Guinean</option>
+                          <option value="guyanese">Guyanese</option>
+                          <option value="haitian">Haitian</option>
+                          <option value="herzegovinian">Herzegovinian</option>
+                          <option value="honduran">Honduran</option>
+                          <option value="hungarian">Hungarian</option>
+                          <option value="icelander">Icelander</option>
+                          <option value="indian">Indian</option>
+                          <option value="indonesian">Indonesian</option>
+                          <option value="iranian">Iranian</option>
+                          <option value="iraqi">Iraqi</option>
+                          <option value="irish">Irish</option>
+                          <option value="israeli">Israeli</option>
+                          <option value="italian">Italian</option>
+                          <option value="ivorian">Ivorian</option>
+                          <option value="jamaican">Jamaican</option>
+                          <option value="japanese">Japanese</option>
+                          <option value="jordanian">Jordanian</option>
+                          <option value="kazakhstani">Kazakhstani</option>
+                          <option value="kenyan">Kenyan</option>
+                          <option value="kittian and nevisian">Kittian and Nevisian</option>
+                          <option value="kuwaiti">Kuwaiti</option>
+                          <option value="kyrgyz">Kyrgyz</option>
+                          <option value="laotian">Laotian</option>
+                          <option value="latvian">Latvian</option>
+                          <option value="lebanese">Lebanese</option>
+                          <option value="liberian">Liberian</option>
+                          <option value="libyan">Libyan</option>
+                          <option value="liechtensteiner">Liechtensteiner</option>
+                          <option value="lithuanian">Lithuanian</option>
+                          <option value="luxembourger">Luxembourger</option>
+                          <option value="macedonian">Macedonian</option>
+                          <option value="malagasy">Malagasy</option>
+                          <option value="malawian">Malawian</option>
+                          <option value="malaysian">Malaysian</option>
+                          <option value="maldivan">Maldivan</option>
+                          <option value="malian">Malian</option>
+                          <option value="maltese">Maltese</option>
+                          <option value="marshallese">Marshallese</option>
+                          <option value="mauritanian">Mauritanian</option>
+                          <option value="mauritian">Mauritian</option>
+                          <option value="mexican">Mexican</option>
+                          <option value="micronesian">Micronesian</option>
+                          <option value="moldovan">Moldovan</option>
+                          <option value="monacan">Monacan</option>
+                          <option value="mongolian">Mongolian</option>
+                          <option value="moroccan">Moroccan</option>
+                          <option value="mosotho">Mosotho</option>
+                          <option value="motswana">Motswana</option>
+                          <option value="mozambican">Mozambican</option>
+                          <option value="namibian">Namibian</option>
+                          <option value="nauruan">Nauruan</option>
+                          <option value="nepalese">Nepalese</option>
+                          <option value="new zealander">New Zealander</option>
+                          <option value="ni-vanuatu">Ni-Vanuatu</option>
+                          <option value="nicaraguan">Nicaraguan</option>
+                          <option value="nigerien">Nigerien</option>
+                          <option value="north korean">North Korean</option>
+                          <option value="northern irish">Northern Irish</option>
+                          <option value="norwegian">Norwegian</option>
+                          <option value="omani">Omani</option>
+                          <option value="pakistani">Pakistani</option>
+                          <option value="palauan">Palauan</option>
+                          <option value="panamanian">Panamanian</option>
+                          <option value="papua new guinean">Papua New Guinean</option>
+                          <option value="paraguayan">Paraguayan</option>
+                          <option value="peruvian">Peruvian</option>
+                          <option value="polish">Polish</option>
+                          <option value="portuguese">Portuguese</option>
+                          <option value="qatari">Qatari</option>
+                          <option value="romanian">Romanian</option>
+                          <option value="russian">Russian</option>
+                          <option value="rwandan">Rwandan</option>
+                          <option value="saint lucian">Saint Lucian</option>
+                          <option value="salvadoran">Salvadoran</option>
+                          <option value="samoan">Samoan</option>
+                          <option value="san marinese">San Marinese</option>
+                          <option value="sao tomean">Sao Tomean</option>
+                          <option value="saudi">Saudi</option>
+                          <option value="scottish">Scottish</option>
+                          <option value="senegalese">Senegalese</option>
+                          <option value="serbian">Serbian</option>
+                          <option value="seychellois">Seychellois</option>
+                          <option value="sierra leonean">Sierra Leonean</option>
+                          <option value="singaporean">Singaporean</option>
+                          <option value="slovakian">Slovakian</option>
+                          <option value="slovenian">Slovenian</option>
+                          <option value="solomon islander">Solomon Islander</option>
+                          <option value="somali">Somali</option>
+                          <option value="south african">South African</option>
+                          <option value="south korean">South Korean</option>
+                          <option value="spanish">Spanish</option>
+                          <option value="sri lankan">Sri Lankan</option>
+                          <option value="sudanese">Sudanese</option>
+                          <option value="surinamer">Surinamer</option>
+                          <option value="swazi">Swazi</option>
+                          <option value="swedish">Swedish</option>
+                          <option value="swiss">Swiss</option>
+                          <option value="syrian">Syrian</option>
+                          <option value="taiwanese">Taiwanese</option>
+                          <option value="tajik">Tajik</option>
+                          <option value="tanzanian">Tanzanian</option>
+                          <option value="thai">Thai</option>
+                          <option value="togolese">Togolese</option>
+                          <option value="tongan">Tongan</option>
+                          <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                          <option value="tunisian">Tunisian</option>
+                          <option value="turkish">Turkish</option>
+                          <option value="tuvaluan">Tuvaluan</option>
+                          <option value="ugandan">Ugandan</option>
+                          <option value="ukrainian">Ukrainian</option>
+                          <option value="uruguayan">Uruguayan</option>
+                          <option value="uzbekistani">Uzbekistani</option>
+                          <option value="venezuelan">Venezuelan</option>
+                          <option value="vietnamese">Vietnamese</option>
+                          <option value="welsh">Welsh</option>
+                          <option value="yemenite">Yemenite</option>
+                          <option value="zambian">Zambian</option>
+                          <option value="zimbabwean">Zimbabwean</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary" value="saveChanges">Save Changes</button>
+                    </div>
+                  </form><!-- End Profile Edit Form -->
+                </div>
+
+                <div class="tab-pane fade show edit-interest" id="edit-interest">
+                  <div class="interest">
+                    <h5 class="interest-font">Please click tags below to update your interest!</h5>
+                    <div class="tag-container" id="tagsList">
+
+                    </div>
+                    <h5 class="interest-font">Your Selected Interests:</h5>
+                    <div class="tag-container">
+                    <div class="selected-tags" id="selectedList"></div>
+                    <div class="error-message">Please select at lease 3 interest!</div>
+                  </div>
+                </div>
+                  <div class="text-center_Interest">
+                    <button type="submit" class="btn btn-primary" value="saveInterest">Save Interest</button>
+                  </div>
+                </div>
+                <div class="tab-pane fade pt-3" id="profile-change-password">
+                  <!-- Change Password Form -->
+                  <form>
+
+                    <div class="row mb-3">
+                      <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label ">Current Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="password" type="password" class="form-control" id="currentPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="newpassword" type="password" class="form-control" id="newPassword">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New Password</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="renewpassword" type="password" class="form-control" id="renewPassword">
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary" value="changePassword">Change Password</button>
+                    </div>
+                  </form><!-- End Change Password Form -->
+                </div>
+
+              </div><!-- End Bordered Tabs -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NavigateNow</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!--end-->
+      Object Oriented Application Frameworks Team 18
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../../assets/vendor/quill/quill.min.js"></script>
+  <script src="../../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/UserPages/Profile.js"></script>
+
+</body>
+</html>

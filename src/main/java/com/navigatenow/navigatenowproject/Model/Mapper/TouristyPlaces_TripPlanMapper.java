@@ -1,0 +1,17 @@
+package com.navigatenow.navigatenowproject.Model.Mapper;
+
+import com.navigatenow.navigatenowproject.Model.DTO.TouristyPlaces_TripPlanDTOs.TouristyPlaces_TripPlanGetDTO;
+import com.navigatenow.navigatenowproject.Model.DTO.TouristyPlaces_TripPlanDTOs.TouristyPlaces_TripPlanPostDTO;
+import com.navigatenow.navigatenowproject.Model.DTO.TouristyPlaces_TripPlanDTOs.TouristyPlaces_TripPlanUpdateDTO;
+import com.navigatenow.navigatenowproject.Model.Entity.TouristyPlaces_TripPlanEntity;
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface TouristyPlaces_TripPlanMapper {
+    TouristyPlaces_TripPlanEntity ToEntity(TouristyPlaces_TripPlanPostDTO touristyPlaces_tripPlanPostDTO);
+    TouristyPlaces_TripPlanEntity ToEntity(TouristyPlaces_TripPlanUpdateDTO touristyPlaces_tripPlanUpdateDTO);
+
+    TouristyPlaces_TripPlanPostDTO ToTouristyPlaces_TripPlanPostDTO(TouristyPlaces_TripPlanEntity touristyPlaces_tripPlanEntity);
+    TouristyPlaces_TripPlanGetDTO ToTouristyPlaces_TripPlanGetDTO(TouristyPlaces_TripPlanEntity touristyPlaces_tripPlanEntity);
+    TouristyPlaces_TripPlanUpdateDTO ToTouristyPlaces_TripPlanUpdateDTO(TouristyPlaces_TripPlanEntity touristyPlaces_tripPlanEntity);
+}
