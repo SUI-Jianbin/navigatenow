@@ -1,2 +1,2 @@
 # navigatenow
-This project is to develop a web application tailored for the tourism industry, assisting tourists worldwide in accessing information about Sydney's attractions.
+The objective of this project is to develop a web application tailored for the tourism industry, assisting tourists worldwide in accessing information about Sydney's attractions. Diverging from traditional tourism models, users can plan their trips directly via our application instead of relying on travel agencies or other third-party platforms. This approach ensures that the information presented is transparent, concise, and easily comprehensible, allowing for better expenses and checklist planning.
